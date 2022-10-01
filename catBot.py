@@ -10,7 +10,7 @@ timeline = api.mentions_timeline() #Gets all of the mentions in your timeline
 for tweet in timeline:#Runs through all the of the tweets
     if((tweet.favorited == False) & ("cat" in (tweet.text).lower())): #only gets unliked tweets  and have the word cat
         text = tweet.text.lower()#Turns everything to lowercase
-        text = text.replace('@umbcieee', '',1)#Removes name
+        text = text.replace('@wikitodaybot', '',1)#Removes name
         text = text.replace('cat', '',1)#Removes cat
         text = text.replace(':', '',1)#Removes :
         BasicCATAASWorking.getCatWithText('@'+tweet.user.screen_name+' :'+text)#Downloads image with text

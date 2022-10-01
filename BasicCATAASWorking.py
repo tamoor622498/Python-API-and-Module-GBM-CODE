@@ -10,4 +10,4 @@ def getCatWithText(text=" "):#space for "empty"
     file.close() #File write finished
 
 if __name__ == "__main__":
-    getCatWithText()
+    getCatWithText("HELLO hackUMBC!")
